@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Bullying Quiz</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <style>
+        ol {
+            font-weight: bolder;
+        }
+
+        p {
+            font-size: 20px;
+        }
+        .container{
+            background-color: #F9F7F3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .quiz-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F7A072;
+            padding: 20px;
+            max-width: 900px;
+        }
+
+        .quiz-content {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            background-color: #F9F7F3;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navigation-bar" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Project Heartcode</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="flaming.html">Flaming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="harassment.html">Harassment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="quiz.html">Quiz</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="mentee1.html">Cayden</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="mentee2.html">Zi Rong</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="mentors.html">About the mentors</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline text-white" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="quiz-container">
+            <div class="quiz-content">
+                <form id="quizForm">
+                    <h1>Cyber Bullying Quiz</h1>
+                    <ol>
+                        <li>
+                            <p>You CAN'T be cyber bullied on...</p>
+                            <label><input type="radio" name="q1" value="social media"> Social Media
+                            </label><br>
+                            <label><input type="radio" name="q1" value="Xbox"> Xbox
+                            </label><br>
+                            <label><input type="radio" name="q1" value="phone calls"> Phone Calls
+                            </label><br>
+                            <label><input type="radio" name="q1" value="email"> Email
+                            </label>
+                        </li>
+                        <br>
+                        <li>
+                            <p> What is harassment on the internet?
+                            </p>
+                            <label><input type="radio" name="q2" value="intimidate, threaten, or belittle individuals">
+                                Intimidate,
+                                threaten, or belittle individuals
+                            </label><br>
+                            <label><input type="radio" name="q2" value="Posting ugly pictures of others"> Posting ugly
+                                pictures of
+                                others
+                            </label><br>
+                            <label><input type="radio" name="q2" value="Impersonating someone online"> Impersonating
+                                someone
+                                online
+                            </label><br>
+                            <label><input type="radio" name="q2" value="Hacking someone's account"> Hacking someone's
+                                account</label>
+                        </li>
+                        <br>
+                        <li>
+                            <p>Who can cyber bully you on the internet?</p>
+                            <label><input type="radio" name="q3" value="People above 13"> People above 13
+                            </label><br>
+                            <label><input type="radio" name="q3" value="Only people that know you"> Only people that
+                                know
+                                you
+                            </label><br>
+                            <label><input type="radio" name="q3" value="People under 16"> People under 16
+                            </label><br>
+                            <label><input type="radio" name="q3" value="Anyone on the internet"> Anyone on the
+                                internet</label>
+                        </li>
+                        <br>
+                        <li>
+                            <p>Who should you share your password with?</p>
+                            <label><input type="radio" name="q4" value="Best Friends"> Best Friends
+                            </label><br>
+                            <label><input type="radio" name="q4" value="Everyone"> Everyone
+                            </label><br>
+                            <label><input type="radio" name="q4" value="No one"> No one
+                            </label><br>
+                            <label><input type="radio" name="q4" value="Adults"> Adults</label>
+                        </li>
+                        <br>
+                        <li>
+                            <p>If someone sends you a nasty message online what should you do with it?</p>
+                            <label><input type="radio" name="q5" value="Ignore it"> Ignore it
+                            </label><br>
+                            <label><input type="radio" name="q5" value="Save it"> Save it
+                            </label><br>
+                            <label><input type="radio" name="q5" value="Share it"> Share it
+                            </label><br>
+                            <label><input type="radio" name="q5" value="Delete it"> Delete it</label>
+                        </li>
+                        <br>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" onclick="submitQuiz()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Well Done!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="scoreText">You scored <span id="score">0</span> points!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function submitQuiz() {
+            const correctAnswers = [
+                "phone calls",
+                "intimidate, threaten, or belittle individuals",
+                "Anyone on the internet",
+                "No one",
+                "Save it"
+            ];
+
+            const form = document.getElementById("quizForm");
+            const formData = new FormData(form);
+            let userAnswers = [];
+            let index = 0;
+
+            for (let i = 1; i <= 5; i++) {
+                const selectedAnswer = formData.get(`q${i}`);
+                userAnswers.push(selectedAnswer);
+            }
+
+            let score = 0;
+
+            userAnswers.forEach((answer) => {
+                if (answer === correctAnswers[index]) {
+                    score++;
+                }
+                index++;
+            });
+
+            document.getElementById('score').innerText = score;
+        }
+    </script>
+
+</body>
+
+</html>
