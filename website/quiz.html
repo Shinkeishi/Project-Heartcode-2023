@@ -7,6 +7,7 @@
     <link href="styles.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="icon" href="../assets/heartcode.png" />
     <style>
         ol {
             font-weight: bolder;
@@ -21,6 +22,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        .box {
+            background-color: #EDDEA4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:20px;
+            width:100%;
         }
 
         .quiz-container {
@@ -178,7 +188,7 @@
             </form>
         </div>
     </div>
-    
+
     <div class="modal" id="exampleModal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -195,7 +205,19 @@
             </div>
         </div>
     </div>
-    
+    <hr>
+    <div class="container">
+        <div class="box">
+            <form class="mt-4">
+                <div class="mb-3">
+                    <h1 class="text-center">Share Your Kind Words</h1>
+                    <p>Send an encouragement note to someone who needs it!</p>
+                    <textarea class="form-control" id="kindWords" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
