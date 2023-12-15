@@ -15,19 +15,22 @@
         p {
             font-size: 20px;
         }
-        .container{
+
+        .container {
             background-color: #F9F7F3;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         .quiz-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #F7A072;
+            background-color: #B5E2FA;
             padding: 20px;
-            max-width: 900px;
+            width: 100%;
+
         }
 
         .quiz-content {
@@ -62,7 +65,7 @@
                         <a class="nav-link active" href="harassment.html">Harassment</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="quiz.html">Quiz</a>
+                        <a class="nav-link active" href="quiz.html">Others</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
@@ -96,81 +99,83 @@
     </nav>
     <div class="container mt-5">
         <div class="quiz-container">
-            <div class="quiz-content">
-                <form id="quizForm">
-                    <h1>Cyber Bullying Quiz</h1>
-                    <ol>
-                        <li>
-                            <p>You CAN'T be cyber bullied on...</p>
-                            <label><input type="radio" name="q1" value="social media"> Social Media
-                            </label><br>
-                            <label><input type="radio" name="q1" value="Xbox"> Xbox
-                            </label><br>
-                            <label><input type="radio" name="q1" value="phone calls"> Phone Calls
-                            </label><br>
-                            <label><input type="radio" name="q1" value="email"> Email
-                            </label>
-                        </li>
-                        <br>
-                        <li>
-                            <p> What is harassment on the internet?
-                            </p>
-                            <label><input type="radio" name="q2" value="intimidate, threaten, or belittle individuals">
-                                Intimidate,
-                                threaten, or belittle individuals
-                            </label><br>
-                            <label><input type="radio" name="q2" value="Posting ugly pictures of others"> Posting ugly
-                                pictures of
-                                others
-                            </label><br>
-                            <label><input type="radio" name="q2" value="Impersonating someone online"> Impersonating
-                                someone
-                                online
-                            </label><br>
-                            <label><input type="radio" name="q2" value="Hacking someone's account"> Hacking someone's
-                                account</label>
-                        </li>
-                        <br>
-                        <li>
-                            <p>Who can cyber bully you on the internet?</p>
-                            <label><input type="radio" name="q3" value="People above 13"> People above 13
-                            </label><br>
-                            <label><input type="radio" name="q3" value="Only people that know you"> Only people that
-                                know
-                                you
-                            </label><br>
-                            <label><input type="radio" name="q3" value="People under 16"> People under 16
-                            </label><br>
-                            <label><input type="radio" name="q3" value="Anyone on the internet"> Anyone on the
-                                internet</label>
-                        </li>
-                        <br>
-                        <li>
-                            <p>Who should you share your password with?</p>
-                            <label><input type="radio" name="q4" value="Best Friends"> Best Friends
-                            </label><br>
-                            <label><input type="radio" name="q4" value="Everyone"> Everyone
-                            </label><br>
-                            <label><input type="radio" name="q4" value="No one"> No one
-                            </label><br>
-                            <label><input type="radio" name="q4" value="Adults"> Adults</label>
-                        </li>
-                        <br>
-                        <li>
-                            <p>If someone sends you a nasty message online what should you do with it?</p>
-                            <label><input type="radio" name="q5" value="Ignore it"> Ignore it
-                            </label><br>
-                            <label><input type="radio" name="q5" value="Save it"> Save it
-                            </label><br>
-                            <label><input type="radio" name="q5" value="Share it"> Share it
-                            </label><br>
-                            <label><input type="radio" name="q5" value="Delete it"> Delete it</label>
-                        </li>
-                        <br>
-                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal" onclick="submitQuiz()">Submit</button>
-                </form>
-            </div>
+            <form id="quizForm">
+                <h1 class="text-center">Cyber Bullying Quiz</h1>
+                <div class="quiz-content">
+                    <h4>Question 1</h4>
+                    <p>You CAN'T be cyber bullied on...</p>
+                    <label><input type="radio" name="q1" value="social media"> Social Media
+                    </label><br>
+                    <label><input type="radio" name="q1" value="Xbox"> Xbox
+                    </label><br>
+                    <label><input type="radio" name="q1" value="phone calls"> Phone Calls
+                    </label><br>
+                    <label><input type="radio" name="q1" value="email"> Email
+                    </label>
+                </div>
+                <br>
+                <div class="quiz-content">
+                    <h4>Question 2</h4>
+                    <p> What is harassment on the internet?
+                    </p>
+                    <label><input type="radio" name="q2" value="intimidate, threaten, or belittle individuals">
+                        Intimidate,
+                        threaten, or belittle individuals
+                    </label><br>
+                    <label><input type="radio" name="q2" value="Posting ugly pictures of others"> Posting ugly
+                        pictures of
+                        others
+                    </label><br>
+                    <label><input type="radio" name="q2" value="Impersonating someone online"> Impersonating
+                        someone
+                        online
+                    </label><br>
+                    <label><input type="radio" name="q2" value="Hacking someone's account"> Hacking someone's
+                        account</label>
+                </div>
+                <br>
+                <div class="quiz-content">
+                    <h4>Question 3</h4>
+                    <p>Who can cyber bully you on the internet?</p>
+                    <label><input type="radio" name="q3" value="People above 13"> People above 13
+                    </label><br>
+                    <label><input type="radio" name="q3" value="Only people that know you"> Only people that
+                        know
+                        you
+                    </label><br>
+                    <label><input type="radio" name="q3" value="People under 16"> People under 16
+                    </label><br>
+                    <label><input type="radio" name="q3" value="Anyone on the internet"> Anyone on the
+                        internet</label>
+                </div>
+                <br>
+                <div class="quiz-content">
+                    <h4>Question 4</h4>
+                    <p>Who should you share your password with?</p>
+                    <label><input type="radio" name="q4" value="Best Friends"> Best Friends
+                    </label><br>
+                    <label><input type="radio" name="q4" value="Everyone"> Everyone
+                    </label><br>
+                    <label><input type="radio" name="q4" value="No one"> No one
+                    </label><br>
+                    <label><input type="radio" name="q4" value="Adults"> Adults</label>
+                </div>
+                <br>
+                <div class="quiz-content">
+                    <h4>Question 5</h4>
+                    <p>If someone sends you a nasty message online what should you do with it?</p>
+                    <label><input type="radio" name="q5" value="Ignore it"> Ignore it
+                    </label><br>
+                    <label><input type="radio" name="q5" value="Save it"> Save it
+                    </label><br>
+                    <label><input type="radio" name="q5" value="Share it"> Share it
+                    </label><br>
+                    <label><input type="radio" name="q5" value="Delete it"> Delete it</label>
+                </div>
+                <br>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    onclick="submitQuiz()">Submit</button>
+            </form>
         </div>
     </div>
 
