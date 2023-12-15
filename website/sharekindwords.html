@@ -1,202 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Share Kind Words</title>
-        <link href="styles.css" rel="stylesheet" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-            crossorigin="anonymous"
-        />
-        <link rel="icon" href="../assets/heartcode.png" />
-        <style>
-            .container {
-                margin-top: 5%;
-                background-color: #f9f7f3;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 5%;
-            }
 
-            .box {
-                background-color: #fff0a3;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 20px;
-                width: 100%;
-                height: 500px;
-            }
-        </style>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <title>Share Kind Words</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="icon" href="../assets/heartcode.png" />
+    <style>
+        .box {
+            background-color: #fff0a3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 580px;
+            border-radius: 2%;
+            margin:2%
+        }
+    </style>
+</head>
 
-    <body>
-        <nav id="navigation-bar" class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand text-white" href="index.html"
-                    >Project Heartcode</a
-                >
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div
-                    class="collapse navbar-collapse"
-                    id="navbarSupportedContent"
-                >
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link active"
-                                aria-current="page"
-                                href="index.html"
-                                >Home</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="flaming.html"
-                                >Flaming</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="harassment.html"
-                                >Harassment</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="quiz.html">Quiz</a>
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link active"
-                                href="sharekindwords.html"
-                                >Share Kind Words</a
-                            >
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
-                                About Us
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="mentees.html"
-                                        >Cayden & Zi Rong</a
-                                    >
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="mentors.html"
-                                        >About the mentors</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input
-                            class="form-control me-2"
-                            type="search"
-                            placeholder="Search"
-                            aria-label="Search"
-                        />
-                        <button
-                            class="btn btn-outline text-white"
-                            type="submit"
-                        >
-                            Search
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-
-        <div class="container rounded">
-            <div class="box">
-                <form class="mt-4" id="kindWordsForm">
-                    <div class="mb-3">
-                        <h1>Share Your Kind Words:</h1>
-                        <p>
-                            Send an encouragement note to someone who needs it!
-                        </p>
-                        <textarea
-                            class="form-control"
-                            id="kindWords"
-                            rows="3"
-                        ></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                        Submit
+<body>
+    <nav id="navigation-bar" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html">Project Heartcode</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="flaming.html">Flaming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="harassment.html">Harassment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="quiz.html">Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="sharekindwords.html">Share Kind Words</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="mentees.html">Cayden & Zi Rong</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="mentors.html">About the mentors</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline text-white" type="submit">
+                        Search
                     </button>
                 </form>
             </div>
         </div>
+    </nav>
 
-        <!-- Add the Modal -->
-        <div class="modal" id="exampleModal" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Done!</h5>
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                        ></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Your kind words have been received. Thank you!</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-bs-dismiss="modal"
-                        >
-                            Close
-                        </button>
-                    </div>
+
+    <div class="box">
+        <form class="mt-4" id="kindWordsForm">
+            <div class="mb-3">
+                <h1>Share Your Kind Words:</h1>
+                <p>
+                    Send an encouragement note to someone who needs it!
+                </p>
+                <textarea class="form-control" id="kindWords" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                Submit
+            </button>
+        </form>
+    </div>
+
+
+    <!-- Add the Modal -->
+    <div class="modal" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Done!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Your kind words have been received. Thank you!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                        Close
+                    </button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-            crossorigin="anonymous"
-        ></script>
-        <script>
-            document
-                .getElementById("kindWordsForm")
-                .addEventListener("submit", function (event) {
-                    event.preventDefault(); // Prevents the default form submission
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script>
+        document
+            .getElementById("kindWordsForm")
+            .addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevents the default form submission
 
-                    var myModal = new bootstrap.Modal(
-                        document.getElementById("exampleModal")
-                    );
-                    myModal.show();
+                var myModal = new bootstrap.Modal(
+                    document.getElementById("exampleModal")
+                );
+                myModal.show();
 
-                    // Optional: Clear the textarea after submission
-                    document.getElementById("kindWords").value = "";
-                });
-        </script>
-    </body>
+                // Optional: Clear the textarea after submission
+                document.getElementById("kindWords").value = "";
+            });
+    </script>
+</body>
+
 </html>
